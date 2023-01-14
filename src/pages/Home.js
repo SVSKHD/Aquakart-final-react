@@ -1,7 +1,9 @@
+import HomeComponent from "../pageComponents/Home/Home"
+
 const Home = () =>{
 return(
     <>
-    <h1>Hello Home</h1>
+     <HomeComponent/>
     </>
 )
 }
