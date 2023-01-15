@@ -5,15 +5,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaUser } from "react-icons/fa";
-import ReusableDialog from "../reusbales/Dialog/Dialog";
+
 
 function CollapsibleExample() {
   const [modal , setModal] = useState(false)
   const handleShowModal = ()=>{
     setModal(true)
-  }
-  const handleCloseModal = () =>{
-    setModal(false)
   }
   return (
     <>
@@ -54,9 +51,7 @@ function CollapsibleExample() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <ReusableDialog show={modal} handleClose={handleCloseModal} title="">
-      
-      </ReusableDialog>
+  
     </>
   );
 }
