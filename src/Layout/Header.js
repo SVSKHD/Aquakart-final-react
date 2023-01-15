@@ -1,11 +1,20 @@
+import {useState} from "react"
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaUser } from "react-icons/fa";
+import ReusableDialog from "../reusbales/Dialog/Dialog";
 
 function CollapsibleExample() {
+  const [modal , setModal] = useState(false)
+  const handleShowModal = ()=>{
+    setModal(true)
+  }
+  const handleCloseModal = () =>{
+    setModal(false)
+  }
   return (
     <>
       <Navbar
@@ -38,13 +47,14 @@ function CollapsibleExample() {
             <Nav>
               <Nav.Link href="#deets">More deets</Nav.Link>
 
-              <Button variant="outline-light">
+              <Button onClick={handleShowModal} variant="outline-light">
                 <FaUser size={25} />
               </Button>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <ReusableDialog show={modal} handleClose={handleCloseModal}/>
     </>
   );
 }
