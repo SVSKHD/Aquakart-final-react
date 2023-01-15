@@ -22,11 +22,11 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-font-sans-serif: "Poppins"!important;
+  --bs-font-sans-serif: "Poppins" !important;
   --bs-body-font-weight: 500;
-  --bs-body-font-size:2rem;
-  --bs-body-font-family:'Roboto';
-  --bs-font-monospace: "Roboto" !important; 
+  --bs-body-font-size: 1rem;
+  --bs-body-font-family: "Roboto";
+  --bs-font-monospace: "Roboto" !important;
   --bs-gradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
@@ -34,5 +34,23 @@
   );
 }
 
+.nav-bar-align {
+  background-color: #00337c;
+  color: white;
+}
 
+.aqua-footer {
+  background-color: #00337c;
+}
 
+.aqua-footer2 {
+  background-color: #2c74b3;
+}
+
+.footer-divider {
+  color: white !important;
+}
+
+.align-right {
+  text-align: right;
+}
