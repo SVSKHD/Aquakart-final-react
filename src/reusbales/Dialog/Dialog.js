@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 const ReusableDialog = (props) => {
   return (
     <>
-      <Modal show={props.show} onHide={props.handleClose} centered>
-        <Modal.Header className="aqua-dialog text-light" closeButton>
+      <Modal
+        className="aqua-dialog text-light"
+        show={props.show}
+        onHide={props.handleClose}
+        centered
+      >
+        <Modal.Header>
           <Modal.Title>{props.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>{props.children}</Modal.Body>

@@ -54,7 +54,9 @@ function CollapsibleExample() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <ReusableDialog show={modal} handleClose={handleCloseModal}/>
+      <ReusableDialog show={modal} handleClose={handleCloseModal} title="">
+      
+      </ReusableDialog>
     </>
   );
 }

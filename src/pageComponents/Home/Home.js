@@ -5,6 +5,8 @@ const HomeComponent = () => {
     <>
       <AquaCommonLayout>
         <h1>Hello Home Component</h1>
+        <input/>
+        <input/>
       </AquaCommonLayout>
     </>
   );

@@ -55,6 +55,8 @@
   text-align: right;
 }
 
-.aqua-dialog{
+.aqua-dialog .modal-content{
+  border-radius: 5px;
   background-color: #00337c;
+  color: #fff;
 }
