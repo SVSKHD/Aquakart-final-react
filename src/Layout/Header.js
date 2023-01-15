@@ -1,17 +1,20 @@
-import {useState} from "react"
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaUser } from "react-icons/fa";
-
+import AuthDialog from "../components/Auth/AuthDialog";
 
 function CollapsibleExample() {
-  const [modal , setModal] = useState(false)
-  const handleShowModal = ()=>{
-    setModal(true)
-  }
+  const [modal, setModal] = useState(false);
+  const handleShowModal = () => {
+    setModal(true);
+  };
+  const handleCloseModal = () => {
+    setModal(false);
+  };
   return (
     <>
       <Navbar
@@ -51,7 +54,7 @@ function CollapsibleExample() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-  
+      <AuthDialog show={modal} handleClose={handleCloseModal} />
     </>
   );
 }
