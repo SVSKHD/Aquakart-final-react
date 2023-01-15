@@ -1,10 +1,10 @@
-import HomeComponent from "../pageComponents/Home/Home"
+import HomeComponent from "../pageComponents/Home/Home";
 
-const Home = () =>{
-return(
+const Home = () => {
+  return (
     <>
-     <HomeComponent/>
+      <HomeComponent />
     </>
-)
-}
-export default Home
+  );
+};
+export default Home;
